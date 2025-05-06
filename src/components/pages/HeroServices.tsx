@@ -1,5 +1,8 @@
+"use client";
+
 import { CircleFadingArrowUp, Construction, ShieldPlus, ShieldPlusIcon, Stethoscope, UploadIcon, Wrench } from "lucide-react";
 import Box from "../Box";
+import { motion } from "motion/react";
 
 const SERVICES = [
     {
@@ -47,11 +50,11 @@ const SERVICES = [
 export default function HeroServices() {
     return (
         <div className="flex flex-col items-center justify-center mt-[6rem] mb-[4rem]">
-            <h1 className="font-bold text-4xl">Services</h1>
-            <p className="opacity-70">Professional computer repair and maintenance services for all your devices</p>
+            <motion.h1 initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} className="font-bold text-4xl">Services</motion.h1>
+            <motion.p initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 0.7 }} transition={{ delay: 0.12 }} className="opacity-70">Professional computer repair and maintenance services for all your devices</motion.p>
 
             <div className="grid grid-cols-4 px-[4rem] gap-3 mt-[2rem]">
-                {SERVICES.map((s, i) => <Box {...s} key={i}/>)}
+                {SERVICES.map((s, i) => <Box delay={0.12 * i} {...s} key={i} />)}
             </div>
         </div>
     )

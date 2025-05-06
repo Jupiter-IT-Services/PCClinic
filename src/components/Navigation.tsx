@@ -9,7 +9,7 @@ export default function Navigation() {
       </div>
       <div className="flex gap-6 text-black items-center">
         <a
-          href="#"
+          href="/"
           className="text-black hover:text-blue-800 smooth_transition"
         >
           Home
