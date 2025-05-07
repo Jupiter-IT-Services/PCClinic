@@ -31,7 +31,7 @@ export default function WhyHome() {
             </h1>
             <div className="w-full flex items-center justify-center">
                 {" "}
-                <div className="flex gap-3 mt-[2rem] w-[80%] mb-[8rem]">
+                <div className="flex md:flex-row flex-col gap-3 mt-[2rem] w-[80%] mb-[8rem]">
                     {REASONS.map((r, i) => (
                         <Box key={i} icon={r.icon} title={r.name}>
                             {r.description}

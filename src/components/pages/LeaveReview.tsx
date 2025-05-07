@@ -2,6 +2,7 @@
 
 import { Star } from "lucide-react";
 import { useState } from "react";
+import Button from "../Button";
 
 export default function LeaveReview() {
 
@@ -16,8 +17,10 @@ export default function LeaveReview() {
                 <ReviewStars />
                 <div className="flex flex-col gap-1 w-full mt-2">
                     <p className="opacity-70">Message</p>
-                    <textarea className="bg-black/5 border rounded-md outline-black/15 smooth_transition border-black/10 shadow-sm py-2 px-4 min-h-[400px]" />
+                    <textarea className="bg-gray-100 border rounded-md outline-black/15 smooth_transition border-black/10 shadow-sm py-2 px-4 min-h-[400px]" />
                 </div>
+
+                <Button variant="secondary" className="mt-[1.5rem]">Submit Review</Button>
             </div>
 
         </div>
@@ -28,7 +31,7 @@ function Input(props: { name: string, className?: string; }) {
     return (
         <div className="flex flex-col gap-1 w-full">
             <p className="opacity-70">{props.name}</p>
-            <input className={`bg-black/5 border rounded-md outline-black/15 smooth_transition border-black/10 shadow-sm py-2 px-4 ${props.className}`} type="text" />
+            <input className={`bg-gray-100 border rounded-md outline-black/15 smooth_transition border-black/10 shadow-sm py-2 px-4 ${props.className}`} type="text" />
         </div>
     )
 }

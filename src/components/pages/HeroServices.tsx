@@ -53,7 +53,7 @@ export default function HeroServices() {
             <motion.h1 initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} className="font-bold text-4xl">Services</motion.h1>
             <motion.p initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 0.7 }} transition={{ delay: 0.12 }} className="opacity-70">Professional computer repair and maintenance services for all your devices</motion.p>
 
-            <div className="grid grid-cols-4 px-[4rem] gap-3 mt-[2rem]">
+            <div className="md:grid md:grid-cols-4 flex flex-col----- px-[4rem] gap-3 mt-[2rem]">
                 {SERVICES.map((s, i) => <Box delay={0.12 * i} {...s} key={i} />)}
             </div>
         </div>

@@ -1,11 +1,12 @@
 export default function GoogleMap() {
     return (
         <iframe
-            width="600"
-            height="450"
+            width="800"
+            height="432"
             style={{
                 border: 0
             }}
+            className="rounded-lg shadow-md"
             loading="lazy"
             allowFullScreen
             referrerPolicy="no-referrer-when-downgrade"

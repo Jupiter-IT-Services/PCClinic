@@ -30,10 +30,10 @@ export default function ServicesHome() {
     return (
         <div className="flex items-center justify-center w-full mb-[2rem]">
             <div className="flex flex-col items-center justify-center">
-                <div className="flex gap-3  mb-[2rem] w-[85%] mt-[2rem]">
+                <div className="flex md:flex-row flex-col gap-3  mb-[2rem] w-[85%] mt-[2rem]">
                     {SERVICES.map((s, i) => <Box className="p-[2rem]" delay={0.12 * i} key={i} title={s.name} icon={s.icon}>{s.description}</Box>)}
                 </div>
-                <Button href="/services" variant="secondary" className="w-[20%] mt-[2rem]" icon={<ArrowTopRightIcon />}>
+                <Button href="/services" variant="secondary" className="md:w-[20%] mt-[2rem] w-full max-w-[70%]" icon={<ArrowTopRightIcon />}>
                     Learn More
                 </Button>
             </div>

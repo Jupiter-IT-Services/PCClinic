@@ -13,8 +13,8 @@ import {
 export default function Footer() {
   return (
     <div className="flex flex-col mt-[12rem]">
-      <div className="h-[25vh] bg-blue-600 text-white flex justify-between px-[6rem] items-center ">
-        <div className="flex flex-col gap-3 max-w-[600px]">
+      <div className="md:h-[25vh] h-[40vh]  bg-blue-600 text-white flex md:flex-row flex-col  mdjustify-between justify-center gap-[2rem] md:gap-0 px-[6rem] items-center ">
+        <div className="flex flex-col gap-1 md:gap-3 max-w-[600px]">
           <h1 className="font-bold text-4xl">Ready to fix your device?</h1>
           <p className="opacity-70">
             Contact PC Clinic today for a free consultations and get your
@@ -30,7 +30,7 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      <div className="h-[40vh] bg-blue-950 text-white flex justify-evenly py-[4rem]  px-[6rem]">
+      <div className="md:h-[40vh] h-[100vh] bg-blue-950 text-white flex md:flex-row flex-col justify-evenly py-[4rem]  px-[6rem]">
         <div className="flex flex-col gap-4">
           <h1 className="font-bold">PC Clinic</h1>
           <p className="w-[300px] opacity-70">
@@ -51,7 +51,7 @@ export default function Footer() {
         </div>
         <div className="flex flex-col gap-4">
           <h1 className="font-bold">Quick Links</h1>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-1 md:gap-3">
             <a
               href="/"
               className="opacity-70 hover:opacity-90 smooth_transition"
@@ -80,7 +80,7 @@ export default function Footer() {
         </div>
         <div className="flex flex-col gap-4 max-w-[350px]">
           <h1 className="font-bold">Contact Us</h1>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-1 md:gap-3">
             <p className="flex gap-2  justify-center">
               <MapPin className="text-blue-600 w-[35px] h-[35px]" />
               <span className="opacity-70">
