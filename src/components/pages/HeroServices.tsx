@@ -51,9 +51,9 @@ export default function HeroServices() {
     return (
         <div className="flex flex-col items-center justify-center mt-[6rem] mb-[4rem]">
             <motion.h1 initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} className="font-bold text-4xl">Services</motion.h1>
-            <motion.p initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 0.7 }} transition={{ delay: 0.12 }} className="opacity-70">Professional computer repair and maintenance services for all your devices</motion.p>
+            <motion.p initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 0.7 }} transition={{ delay: 0.12 }} className="opacity-70 max-w-[300px]  md:max-w-full">Professional computer repair and maintenance services for all your devices</motion.p>
 
-            <div className="md:grid md:grid-cols-4 flex flex-col----- px-[4rem] gap-3 mt-[2rem]">
+            <div className="md:grid md:grid-cols-4 flex flex-col px-[4rem] gap-3 mt-[2rem]">
                 {SERVICES.map((s, i) => <Box delay={0.12 * i} {...s} key={i} />)}
             </div>
         </div>

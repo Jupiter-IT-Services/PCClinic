@@ -18,21 +18,21 @@ export default function Contact() {
         <div className="flex flex-col gap-3">
             <div className="w-full bg-blue-600 text-white py-[6rem] flex items-center justify-center flex-col gap-3-">
                 <motion.h1 initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} className="font-black text-4xl">Contact Us</motion.h1>
-                <motion.p initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.12 }}>Get in touch with our team for all your computer repair needs</motion.p>
+                <motion.p initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 0.7 }} transition={{ delay: 0.12 }} className="md:w-full w-[300px] md:mt-0 mt-[1rem]">Get in touch with our team for all your computer repair needs</motion.p>
             </div>
-            <div className="flex gap-2 mt-[2rem] px-[2rem]">
-                <div className="w-[48%]">
+            <div className="flex md:flex-row flex-col items-center justify-center gap-2 mt-[2rem] px-[2rem]">
+                <div className="w-full md:w-[48%]">
                     <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.25 }} className="border flex flex-col gap-4 border-black/5 shadow-sm px-[2rem] py-[2.5rem] rounded-md">
-                        <div className="flex gap-2">
+                        <div className="flex md:flex-row flex-col gap-2">
                             <Input name="First Name" />
                             <Input name="Last Name" />
                         </div>
-                        <div className="flex gap-2">
+                        <div className="flex md:flex-row flex-col gap-2">
                             <Input name="Phonenumber" type="tel" />
                             <Input name="Email" type="email" />
                         </div>
                         <Dropdown />
-                        <div className="flex flex-col gap-1 w-full">
+                        <div className="flex md:flex-col flex-col gap-1 w-full">
                             <p className="opacity-70">Describe Issue</p>
                             <textarea className={`bg-gray-100 border rounded-md outline-black/15 smooth_transition border-black/10 shadow-sm py-2 px-4 min-h-[300px]`} />
                         </div>
@@ -42,7 +42,7 @@ export default function Contact() {
                     </motion.div>
                 </div>
 
-                <div className="w-[48%]">
+                <div className="w-full md:w-[48%]">
                     <motion.div initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.45 }} className="border flex flex-col gap-4 border-black/5 shadow-sm px-[2rem] py-[2.5rem] rounded-md">
                         <h1 className="font-bold">Contact Information</h1>
 

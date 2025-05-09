@@ -23,9 +23,8 @@ export default function Record() {
             <h1 className="font-black text-4xl">Our Record</h1>
             <p className="opacity-70">We're proud of the service we provide to our community</p>
 
-            <div className="mt-[5rem] flex gap-[8rem] w-full items-center justify-center">
+            <div className="mt-[5rem] md:flex-nowrap flex-wrap flex gap-[3rem] md:gap-[8rem] w-full items-center justify-center">
                 {records.map((r, i) => <RecordItem key={i} {...r}/>)}
-                
             </div>
         </div>
     )

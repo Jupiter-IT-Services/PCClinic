@@ -1,3 +1,4 @@
+"use client";
 import Dash from "@/components/Dash";
 import HeroServices from "@/components/pages/HeroServices";
 import Pricing from "@/components/pages/Pricing";

@@ -29,7 +29,7 @@ export default function Box({
       className={`border flex flex-col gap-3 ${ey ? "px-[2rem] py-[4rem]" : "p-[2rem]"} bg-white border-blue-500/30  hover:shadow-md shadow-sm rounded-lg ${props.className} smooth_transition`}
     >
       <div className="flex gap-3">
-        {props.icon && <div className="bg-blue-600/30 p-2 text-blue-600 rounded-full">
+        {props.icon && <div className="bg-blue-600/30 p-2 h-fit text-blue-600 rounded-full">
           {props.icon}
         </div>}
         {props.title && <h1 className="font-bold text-2xl">{props.title}</h1>}

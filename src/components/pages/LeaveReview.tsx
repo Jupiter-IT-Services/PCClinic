@@ -9,13 +9,13 @@ export default function LeaveReview() {
     return (
         <div className="flex flex-col w-full items-center justify-center mt-[6rem]">
             <h1 className="font-black text-4xl text-center mb-[4rem]">Leave us a review</h1>
-            <div className="flex flex-col gap-4- w-[1000px]">
-                <div className="flex gap-2 mb-2">
+            <div className="flex flex-col gap-4 w-[90%] md:w-[1000px]">
+                <div className="flex md:flex-row flex-col w-full gap-2 mb-2">
                     <Input className="w-full" name={"Full Name"} />
                     <Input className="w-full" name={"Occupation"} />
                 </div>
                 <ReviewStars />
-                <div className="flex flex-col gap-1 w-full mt-2">
+                <div className="flex flex-col gap-1 mt-2">
                     <p className="opacity-70">Message</p>
                     <textarea className="bg-gray-100 border rounded-md outline-black/15 smooth_transition border-black/10 shadow-sm py-2 px-4 min-h-[400px]" />
                 </div>

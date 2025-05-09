@@ -1,3 +1,4 @@
+"use client";
 import Box from "@/components/Box";
 import LeaveReview from "@/components/pages/LeaveReview";
 import Record from "@/components/pages/Record";

@@ -28,8 +28,8 @@ export default function Reviews() {
         <div className="mt-[7rem]">
             <motion.h1 initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} className="font-black text-4xl text-center">Customer Testimonials</motion.h1>
             <motion.p initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 0.7 }} transition={{ delay: 0.12 }} className="opacity-70 text-center">See what our satisfied customers have to say about our services</motion.p>
-            <div className="flex gap-3 flex-wrap items-center justify-center mt-[4rem]">
-                {reviews.map((r, i) => <Box className="w-[23%]" delay={0.12 * i} ey={false} key={i}>
+            <div className="md:flex flex flex-col gap-3 md:flex-wrap items-center justify-center mt-[4rem]">
+                {reviews.map((r, i) => <Box className="md:w-[23%] w-[90%]" delay={0.12 * i} ey={false} key={i}>
                     <h1 suppressHydrationWarning className="font-bold text-2xl">{r.name}</h1>
                     <p suppressHydrationWarning className="opacity-70 italic">{r.tag}</p>
                     <div suppressHydrationWarning className="flex gap-1 mt-3">
