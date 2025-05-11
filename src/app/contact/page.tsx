@@ -18,7 +18,7 @@ export default function Contact() {
         <div className="flex flex-col gap-3">
             <div className="w-full bg-blue-600 text-white py-[6rem] flex items-center justify-center flex-col gap-3-">
                 <motion.h1 initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} className="font-black text-4xl">Contact Us</motion.h1>
-                <motion.p initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 0.7 }} transition={{ delay: 0.12 }} className="md:w-full w-[300px] md:mt-0 mt-[1rem]">Get in touch with our team for all your computer repair needs</motion.p>
+                <motion.p initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 0.7 }} transition={{ delay: 0.12 }} className="w-full text-center md:mt-0 mt-[1rem]">Get in touch with our team for all your computer repair needs</motion.p>
             </div>
             <div className="flex md:flex-row flex-col items-center justify-center gap-2 mt-[2rem] px-[2rem]">
                 <div className="w-full md:w-[48%]">

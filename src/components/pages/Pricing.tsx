@@ -47,8 +47,9 @@ export type PricingCardProps = {
 export function PricingCard(props: PricingCardProps) {
   return (
     <div
-      className={`${props.mp ? "text-white bg-blue-600" : "text-blue-600 bg-white"
-        } shadow-md rounded-lg p-[2rem] w-[90%] mid:w-[20vw] flex flex-col items-center justify-center relative`}
+      className={`${
+        props.mp ? "text-white bg-blue-600" : "text-blue-600 bg-white"
+      } shadow-md rounded-lg p-[2rem] w-[90%] md:w-[20vw] flex flex-col items-center justify-center relative`}
     >
       {props.mp && (
         <div className="absolute top-[-5%] left-[50%] font-semibold h-fit w-fit right-0 bottom-0 bg-blue-300 text-blue-700 py-2 px-5 rounded-md">
@@ -56,8 +57,9 @@ export function PricingCard(props: PricingCardProps) {
         </div>
       )}
       <h1
-        className={`${props.mp ? "text-white" : "text-black"
-          } font-bold text-xl`}
+        className={`${
+          props.mp ? "text-white" : "text-black"
+        } font-bold text-xl`}
       >
         {props.name}
       </h1>
